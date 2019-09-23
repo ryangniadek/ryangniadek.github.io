@@ -1,5 +1,5 @@
-# [Website Development - Old Line Digital, LLC](https://oldlinedigital.com)
-Alongside [Danny Flynn](https://pdanielflynn.com), I founded my own website development firm. Before this, I did freelance work under the name Gniadek Digital and also did various volunteer projects.</br></br>
+# [Website Development](https://oldlinedigital.com)
+Alongside [Danny Flynn](https://pdanielflynn.com), I founded my own website development firm called [Old Line Digital](https://oldlinedigital.com/). Before this, I did freelance work under the name Gniadek Digital and also did various volunteer projects.</br></br>
 Below is a running list of featured website projects that I lead the development for or at a minimum had a signifigant role in.
 - [My Personal Website](https://ryangniadek.com)
 - [QOHS Engineering and Robotics Club Website](https://qoengineering.club)
