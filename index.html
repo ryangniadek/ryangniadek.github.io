@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ryan Gniadek | CS Student at Virginia Tech</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body>
+
+    <div class="w3-sidebar w3-bar-block w3-mobile w3-black" style="width:20%">
+        <h3 class="w3-center">Ryan Gniadek</h3>
+        <img src="ProfilePic2.jpg" alt="A picture of Ryan Gniadek" class="w3-image">
+        <h6>CS Student at Virgnia Tech</h6>
+        <h6>Partner, Full-Stack Developer at Old Line Digital</h6>
+        <h6>Software Engineering Intern at Leidos</h6>
+
+
+        <button class="w3-bar-item w3-center w3-button" onclick="openView('About')">About Me</button>
+        <button class="w3-bar-item w3-center w3-button" onclick="openView('Projects')">Projects</button>
+        <button class="w3-bar-item w3-center w3-button" onclick="openView('Ventures')">Ventures</button>
+        <button class="w3-bar-item w3-center w3-button" onclick="openView('Courses')">Courses</button>
+        <button class="w3-bar-item w3-center w3-button" onclick="openView('Contact')">Contact Me</button>
+    </div>
+
+    <div id="About" style="margin-left:20%">
+        <div class="w3-container w3-center w3-red">
+            <h1>Hello, my name is Ryan!</h1>
+            <p>This is my website where you can see more information about me, check out my projects, ventures, courses,
+                and more.</p>
+        </div>
+        <div class="w3-row">
+            <div class="w3-container w3-center w3-dark-grey">
+                <h1>About Me</h1>
+                <div class="w3-twothird w3-container w3-left-align w3-white">
+                    <br>
+                    <p>
+                        I am a student at the Virginia Tech College of Engineering, working towards a Bachelor of
+                        Science
+                        degree in Computer Science. I am looking for opportunities in software engineering and
+                        development
+                        and data science, especially in transportation or financial applications.
+                    </p>
+                    <p>
+                        Academically, I am interested in software engineering, distributed computing, and operating
+                        systems.
+                        I also work at Leidos Transportation Solutions as a Software Engineer Intern and am working on
+                        research into the performance of space-based machine learning algorithms at Virginia Tech.
+                    </p>
+                    <p>
+                        Additionally, I serve as a coach and mentor to the Engineering and Robotics Club at Quince
+                        Orchard
+                        High School, providing guidance to the team in the areas of club administration, software
+                        design,
+                        and electronics.
+                    </p>
+                    <br>
+                </div>
+                <div class="w3-rest w3-container w3-white">
+                    <img src="VirginiaTech.svg" alt="Virginia Tech" class="w3-image">
+                    <img src="QOERC.png" alt="Quince Orchard Engineering and Robotics Club" class="w3-image">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script>
+        function openView(viewName) {
+            var i;
+            var x = document.getElementsByClassName("view");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            document.getElementById(viewName).style.display = "block";
+        }
+    </script>
+
+</body>
+
+
+</html>
