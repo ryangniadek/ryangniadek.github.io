@@ -1,0 +1,80 @@
+<!-- This site is designed using the W3.CSS framework. Check it out at https://www.w3schools.com/w3css/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Ryan Gniadek</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body>
+    <div class="w3-row">
+        <div class="w3-bar w3-dark-grey">
+            <div class="w3-quarter w3-container">
+                <img src="Images/Logo.png">
+            </div>
+            <button class="w3-bar-item w3-button w3-mobile" onclick="openPage('Home')">Home</button>
+            <button class="w3-bar-item w3-button w3-mobile" onclick="openPage('About')">About Me</button>
+            <button class="w3-bar-item w3-button w3-mobile" onclick="openPage('Contact')">Contact Me</button>
+            <a href="https://github.com/qoerc/qoerc.github.io/wiki" target="_blank"
+                class="w3-bar-item w3-button w3-cyan w3-mobile w3-right">Twitter</a>
+            <a href="https://github.com/qoerc/qoerc.github.io/wiki" target="_blank"
+                class="w3-bar-item w3-button w3-indigo w3-mobile w3-right">LinkedIn</a>
+        </div>
+    </div>
+
+    <!-- The content for each "page" should go inside the corresponding <div> tag with class "page" -->
+    <div id="Home" class="page">
+        <div class="w3-row">
+            <div class="w3-container">
+                <h1>Ryan Gniadek</h1>
+                <p>My newly redesigned website is coming soon!</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="About" class="page" style="display:none">
+        <div class="w3-row">
+            <div class="w3-container">
+                <h1>About Me</h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="Contact" class="page" style="display:none">
+
+    </div>
+
+
+    <script>
+        //JavaScript for Opening New Page
+        function openPage(pageName) {
+            var i;
+            var x = document.getElementsByClassName("page");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            document.getElementById(pageName).style.display = "block";
+        }
+
+        //Retrieve url paramter with given key
+        function getQueryVariable(variable) {
+            var query = window.location.search.substring(1);
+            var vars = query.split("&");
+            for (var i = 0; i < vars.length; i++) {
+                var pair = vars[i].split("=");
+                if (pair[0] == variable) { return pair[1]; }
+            }
+            return (false);
+        }
+
+        if (getQueryVariable("page") != "") {
+            openPage(getQueryVariable("page"));
+        }
+    </script>
+</body>
+
+</html>
